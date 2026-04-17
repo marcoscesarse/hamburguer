@@ -4,17 +4,17 @@
 export default {
   async up (queryInterface, Sequelize) {
     await queryInterface.createTable('entregas', {
-      pedido_id :{
-        type : Sequelize.INTEGER,
-        allowNull : false,
-        primaryKey : true,
-        references : { model : 'pedidos', key : 'id', onDelete : 'CASCADE' , onUpdate : 'CASCADE' }
-      },
-      codigo_rastreio:{
-        type: Sequelize.STRING,
-        allowNull : false,
-        unique : true
-      },
+     pedido_id: {
+  type: Sequelize.INTEGER,
+  allowNull: false,
+  primaryKey: true,
+  references: {
+    model: 'Pedidos', 
+    key: 'id'
+  },
+  onDelete: 'CASCADE',
+  onUpdate: 'CASCADE'
+},
       endereco :{
         type: Sequelize.STRING,
         allowNull : false
