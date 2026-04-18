@@ -28,6 +28,6 @@ Entrega.init({
 },sequelize,
 {
     tableName : 'entregas',
-    timestamps : true, // criar os campos deleteAt e updatedAt
+    timestamps : true, 
     paranoid : true
 })

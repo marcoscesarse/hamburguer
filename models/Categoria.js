@@ -31,7 +31,7 @@ Categoria.init(
     sequelize,
     modelName: 'Categoria',
     tableName: 'categorias',
-    paranoid: true,    // ativa soft delete
+    paranoid: true,    
     timestamps: true
   }
 );
